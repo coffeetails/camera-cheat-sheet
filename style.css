@@ -2,6 +2,7 @@
     /* font-size: 16px; */
     --border-color: white;
     --border-width: 0.1rem;
+    --border-width-sides: 0 var(--border-width) 0 var(--border-width);
     --border: var(--border-width) solid var(--border-color);
 }
 * {
@@ -11,6 +12,7 @@
 body {
     background-color: #0a0a0a;
     color: #fafafa;
+    margin: 0.1rem;
 }
 
 h1,h2, h3 {
@@ -23,7 +25,7 @@ h2 {
     left: 1rem;
     background-color: #0a0a0a;
     border: solid white;
-    border-width: 0 var(--border-width) 0 var(--border-width);
+    border-width: var(--border-width-sides);
     border-radius: 5px;
     width: fit-content;
     padding: 0 0.5rem;
@@ -36,7 +38,11 @@ a {
 nav {
     position: absolute;
     top: 0.25rem;
-    right: 0.75rem;
+    right: 0.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 ol {
@@ -51,7 +57,7 @@ ol {
 
     li {
         margin: 0;
-        padding: 0.5rem;
+        padding: 0.5rem 0.25rem;
     }
 }
 
@@ -67,17 +73,23 @@ article {
 .info-boxes {
     display: flex;
     justify-content: space-around;
+    gap: 0.5rem;
     * {
-        border-radius: 5px;
         padding: 0;
         margin: 0;
     }
-    > div {
+    div {
+        border-radius: 5px;
         padding: 0 0.5rem;
-        width: 20%;
+        width: fit-content;
         min-width: 100px;
         border: var(--border);
-    }
+        border-width: var(--border-width-sides);
+        
+        :first-child {
+            border-bottom: 1px solid gray;
+        }
+    }       
 }
 .info-scale {
     display: flex;
@@ -106,7 +118,6 @@ table {
     table-layout: fixed;
     /* width: fit-content; */
     width: fit-content;
-    min-width: 500px;
     border-collapse: collapse;
     text-align: center;
 
@@ -117,25 +128,4 @@ table {
     .border {
         border-right: var(--border);
     }
-}
-
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem; }
-p { font-size: 1rem; }
-a { font-size: 1rem; }
-td { font-size: 1rem; }
-li { font-size: 1rem; }
-button { font-size: 1rem; }
-
-@media screen and (max-width: 600px) {
-    h1 { font-size: 2.75rem; }
-    h2 { font-size: 2.25rem; }
-    h3 { font-size: 2rem; }
-    p { font-size: 1.5rem; }
-    a { font-size: 1.5rem; }
-    td { font-size: 1.5rem; }
-    li { font-size: 1.5rem; }
-    button { font-size: 1.5rem; }
 }
