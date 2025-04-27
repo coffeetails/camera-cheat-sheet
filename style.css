@@ -1,3 +1,9 @@
+:root {
+    /* font-size: 16px; */
+    --border-color: white;
+    --border-width: 0.1rem;
+    --border: var(--border-width) solid var(--border-color);
+}
 * {
     box-sizing: border-box;
 }
@@ -17,7 +23,7 @@ h2 {
     left: 1rem;
     background-color: #0a0a0a;
     border: solid white;
-    border-width: 0 2px 0 2px;
+    border-width: 0 var(--border-width) 0 var(--border-width);
     border-radius: 5px;
     width: fit-content;
     padding: 0 0.5rem;
@@ -34,7 +40,7 @@ nav {
 }
 
 ol {
-    border: 1px solid white;
+    border: var(--border);
     border-radius: 10px;
     background-color: #392d1e;
     list-style: none;
@@ -51,7 +57,7 @@ ol {
 
 article {
     margin: 2rem 0;
-    border: 1px solid white;
+    border: var(--border);
     border-radius: 10px;
     padding: 0rem 0.5rem 0.5rem;
     position: relative;
@@ -66,11 +72,11 @@ article {
         padding: 0;
         margin: 0;
     }
-    > section {
+    > div {
         padding: 0 0.5rem;
         width: 20%;
         min-width: 100px;
-        border: 1px solid white;
+        border: var(--border);
     }
 }
 .info-scale {
@@ -79,7 +85,7 @@ article {
 }
 
 .table-wrapper {
-    border: 1px solid white;
+    border: var(--border);
     border-radius: 10px;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -100,7 +106,7 @@ table {
     table-layout: fixed;
     /* width: fit-content; */
     width: fit-content;
-    min-width: 10rem;
+    min-width: 500px;
     border-collapse: collapse;
     text-align: center;
 
@@ -109,6 +115,27 @@ table {
     }
 
     .border {
-        border-right: 1px solid white;
+        border-right: var(--border);
     }
+}
+
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+p { font-size: 1rem; }
+a { font-size: 1rem; }
+td { font-size: 1rem; }
+li { font-size: 1rem; }
+button { font-size: 1rem; }
+
+@media screen and (max-width: 600px) {
+    h1 { font-size: 2.75rem; }
+    h2 { font-size: 2.25rem; }
+    h3 { font-size: 2rem; }
+    p { font-size: 1.5rem; }
+    a { font-size: 1.5rem; }
+    td { font-size: 1.5rem; }
+    li { font-size: 1.5rem; }
+    button { font-size: 1.5rem; }
 }
