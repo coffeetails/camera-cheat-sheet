@@ -1,0 +1,35 @@
+{
+    "welcome_message": "Camera Cheat Sheet",
+
+    "apeture_title": "Apeture",
+    "apeture_desc": "Controls the size of the iris (f stop)",
+    "apeture_info_left_focus": "Shallow focus, blurry background",
+    "apeture_info_left_light": "Brighter",
+    "apeture_info_right_focus": "Deep focus, no blurr",
+    "apeture_info_right_light": "Darker",
+    "apeture_info_center": "← Depth of field →",
+
+    "shutter_title": "Shutter Speed",
+    "shutter_desc": "Controls how long the shutter is open in fractions of a second",
+    "shutter_info_left_light": "Brighter",
+    "shutter_info_right_light": "Darker",
+    "shutter_info_left_speed": "Slower",
+    "shutter_info_right_speed": "Faster",
+    "shutter_info_left_exposure": "Longer exposure",
+    "shutter_info_right_exposure": "Shorter exposure",
+    "shutter_blur": "← Blur motion",
+    "shutter_tripod": "← Use a stand",
+    "shutter_handheld": "Handheld ok →",
+    "shutter_freeze": "Freeze motion →",
+    "shutter_info_center": "← Exposure →",
+
+    "iso_title": "ISO",
+    "iso_desc": "Determines sensitivity to light",
+    "iso_info_left_light": "Darker",
+    "iso_info_right_light": "Lighter",
+    "iso_info_left_noise": "Less noise",
+    "iso_info_right_noise": "More noise",
+    "iso_info_left": "← Very bright",
+    "iso_info_center": "← Indoors, fairly bright →",
+    "iso_info_right": "Night, dark →"
+}

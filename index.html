@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Camera Cheat Sheet</title>
+	<meta name="description" content="A simple cheat sheet for manual mode" />
+	<link rel="icon" href="favicon.png">
+	<meta name="theme-color" content="#ffea00">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📸</text></svg>">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+	<body>
+        <h1 data-lang="welcome_message"></h1>
+        <nav>
+            <button onclick="changeLanguage('en')">En</button>
+            <button onclick="changeLanguage('sv')">Sv</button>
+        </nav>
+
+        <article>
+            <h2 data-lang="apeture_title"></h2>
+            <p data-lang="apeture_desc"></p>
+            <ol>
+                <li>f/2.8</li>
+                <li>f/4</li>
+                <li>f/5.6</li>
+                <li>f/8</li>
+                <li>f/11</li>
+                <li>f/16</li>
+                <li>f/22</li>
+            </ol>
+
+            <h3 data-lang="apeture_info_center"></h3>
+            <section class="info-boxes">
+                <section>
+                    <p data-lang="apeture_info_left_light"></p>
+                    <p data-lang="apeture_info_left_focus"></p>
+                </section>
+                <section>
+                    <p data-lang="apeture_info_right_light"></p>
+                    <p data-lang="apeture_info_right_focus"></p>
+                </section>
+            </section>
+        </article>
+        
+        <article>
+            <h2 data-lang="shutter_title"></h2>
+            <p data-lang="shutter_desc"></p>
+
+            <section class="table-wrapper">
+                <table>
+                    <tr>
+                        <td>30</td>
+                        <td>15</td>
+                        <td class="border">10</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1/25</td>
+                        <td>1/30</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="border" data-lang="shutter_blur">←</td>
+                        <td colspan="4" data-lang="shutter_tripod"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>1/50</td>
+                        <td>1/100</td>
+                        <td class="border">1/125</td>
+                        <td>1/250</td>
+                        <td>1/320</td>
+                        <td>1/500</td>
+                        <td>1/1000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="border" data-lang="shutter_handheld"></td>
+                        <td colspan="4" data-lang="shutter_freeze"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <h3 data-lang="shutter_info_center"></h3>
+            <section class="info-boxes">
+                <section>
+                    <p data-lang="shutter_info_left_light"></p>
+                    <p data-lang="shutter_info_left_speed"></p>
+                </section>
+                <section>
+                    <p data-lang="shutter_info_right_light"></p>
+                    <p data-lang="shutter_info_right_speed"></p>
+                </section>
+            </section>
+        </article>
+
+        <article>
+            <h2 data-lang="iso_title"></h2>
+            <p data-lang="iso_desc"></p>
+            <ol>
+                <li>f/2.8</li>
+                <li>f/4</li>
+                <li>f/5.6</li>
+                <li>f/8</li>
+                <li>f/11</li>
+                <li>f/16</li>
+                <li>f/22</li>
+            </ol>
+
+            <section class="info-scale">
+                <h3 data-lang="iso_info_left"></h3>
+                <h3 data-lang="iso_info_center"></h3>
+                <h3 data-lang="iso_info_right"></h3>
+            </section>
+
+            <section class="info-boxes">
+                <section>
+                    <p data-lang="iso_info_left_light"></p>
+                    <p data-lang="iso_info_left_noise"></p>
+                </section>
+                <section>
+                    <p data-lang="iso_info_right_light"></p>
+                    <p data-lang="iso_info_right_noise"></p>
+                </section>
+            </section>
+        </article>
+	<script src="script.js"></script>
+	</body>
+</html>

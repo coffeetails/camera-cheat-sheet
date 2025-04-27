@@ -1,0 +1,35 @@
+{
+    "welcome_message": "Kamera Lathund",
+
+    "apeture_title": "Bländaröppning",
+    "apeture_desc": "Kontrollerar storleken på irisen (bländartal)",
+    "apeture_info_left_light": "Ljusare",
+    "apeture_info_left_focus": "Grunt fokus, suddig bakgrund",
+    "apeture_info_center": "← Fokusdjup →",
+    "apeture_info_right_light": "Mörkare",
+    "apeture_info_right_focus": "Djupt fokus, inget suddigt",
+
+    "shutter_title": "Slutartid",
+    "shutter_desc": "Anger hur länge slutaren är öppen i bråkdelar av en sekund",
+    "shutter_info_left_light": "Ljusare",
+    "shutter_info_right_light": "Mörkare",
+    "shutter_info_left_speed": "Långsammare",
+    "shutter_info_right_speed": "Snabbare",
+    "shutter_info_left_exposure": "Längre exponering",
+    "shutter_info_right_exposure": "Kortare exponering",
+    "shutter_blur": "← Rörelseoskärpa",
+    "shutter_tripod": "← Använd stativ",
+    "shutter_handheld": "Handhållen ok →",
+    "shutter_freeze": "Frys rörelser →",
+    "shutter_info_center": "← Exponering →",
+
+    "iso_title": "ISO",
+    "iso_desc": "Styr ljuskänsligheten",
+    "iso_info_left_light": "Mörkare",
+    "iso_info_right_light": "Ljusare",
+    "iso_info_left_noise": "Mindre brus",
+    "iso_info_right_noise": "Mer brus",
+    "iso_info_left": "← Mycket ljust",
+    "iso_info_center": "← Inomhus, ganska ljust →",
+    "iso_info_right": "Natt, mörkt →"
+}
